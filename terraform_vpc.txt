@@ -1,0 +1,49 @@
+Terraform
+-----------------
+
+Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks. 
+The provisioning of cloud resources, for instance, is one of the main use cases of Terraform. 
+It's a cloud-agnostic, open-source provisioning tool written in the Go language and created by HashiCorp
+
+------------------------------------------------------------------------------------------------------------------
+
+sample project
+----------------
+A new project aimed at automating the creation of an AWS infrastructure using Terraform. 
+This endeavor will involve setting up Virtual Private Clouds (VPCs) in a scalable and efficient manner. 
+as I dive into the world of infrastructure automation with Terraform and AWS. 
+Excited to tackle this challenge and streamline cloud resource management effectively.
+
+WORKFLOW-
+---------
+Using terraform IAC create for vpc and make a infrastructure in Aws.
+
+in vpc"s |
+---------
+ 1-create vpc
+ 2-two subnet- public & private
+ 3-Internet gateway- Attach to VPC
+ 4-Two route table - public & private
+ 5-in publict rt attach public sub & in private sub attach private sub
+ 6-for public give internet gateway
+ 7-tow security-for public & private
+ 8-create two machines in AWS
+ 9-LOGIN in Public machine
+ 10-create private nat 
+
+11-in linux machine create afile vi main.tf(copy the code and paste in the file)
+
+to install teraform inside machine in ubuntu
+use these commands..
+--------------------------------
+1} wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+2} echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+3} sudo apt update && sudo apt install terraform
+
+12-terraform init
+13-terraform plan
+14-terraform apply
+15-infrastructure will create in aws
+16-to delete the infrastructure (Terraform destroy)
+ 
+

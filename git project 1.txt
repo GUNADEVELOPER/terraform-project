@@ -1,0 +1,61 @@
+------------------------
+Todays project            
+------------------------
+creating a server in Aws, in that machine(linux) im going to install git.
+From that git i write the code and push the code to the repository in GitHub. 
+
+steps:
+------------------------
+1- Create a server in AWS.In the linux machine.
+2- open the machine using Putty.
+3- lagin as root user(sudo -i)
+
+yum install git -y
+mkdir git
+cd git
+ vi sampl project 1
+cat  sampl project 1
+git add sampl project 1
+git init
+ls /lrta
+git add
+git status -s
+git add .
+git status -s
+git branch
+git commit -m "html 1"
+git log
+git branch
+git config --global user.name "Ramya"
+git config --global user.email "456@gmail.com"
+git config --list
+vi test sample project 2
+git status -s
+git add .
+git status -s
+git commit -am "html 2"
+git log
+git log --oneline
+git log
+git branch feature
+git branch
+git switch feature
+git log
+git switch master
+git merge feature
+
+4-in github crete a new repo
+
+git push
+git remote add guna https://github.com/GUNADEVELOPER/Git-project-1.git
+git push guna master
+
+after that, enter username of github and for the password .Generate a token in github
+copy that and paste it in the machine
+
+code succesfully pushed to the github.
+
+
+
+
+	
